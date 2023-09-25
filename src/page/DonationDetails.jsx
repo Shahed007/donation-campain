@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { useOutletContext, useParams } from "react-router-dom";
-import { saveLocalStorage, getLocalStorage } from "../utility/LocalStorage/LocalStorage";
-import { toast } from "react-toastify";
+import { saveLocalStorage } from "../utility/LocalStorage/LocalStorage";
+
 
 
 const DonationDetails = () => {
@@ -19,7 +19,6 @@ const DonationDetails = () => {
  const {id,image,title,button_bg,description} = getFindData || {};
 
  const handleSaveLocalSt = () => {
-  
   saveLocalStorage(id);
  }
 
