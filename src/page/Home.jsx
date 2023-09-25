@@ -15,7 +15,7 @@ const Home = () => {
       <HeroBanner></HeroBanner>
       </div>
     </section>
-    <section className="container mx-auto px-3 mt-32">
+    <section className="container mx-auto px-3 mt-8">
       <Category></Category>
     </section>
     </>

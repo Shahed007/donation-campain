@@ -1,15 +1,46 @@
 import { useOutletContext } from "react-router-dom"
 import Card from "../Card/Card";
+import { useEffect, useState } from "react";
 
 
 const Category = () => {
-
+  const [searchText, setSearchText] = useState('');
+  const [searchInput, setSearchInput] = useState('');
+  const [getData, setData] = useState([]);
+  const form_data = document.getElementById('form-data');
+  const search = document.getElementById('search');
   const data = useOutletContext();
-  console.log(data);
+  // console.log(data);
+  useEffect(()=>{
+    if(data.length > 0){
+      form_data.addEventListener('submit', (e) => {
+        e.preventDefault();
+        setSearchText(e.target.search.value);
+      });
+
+      search.addEventListener('input', (e) => {
+        setSearchInput(e.target.value);
+      });
+
+      if(!searchInput){
+          setData(data)
+      }else{
+        const filterData = data.filter(item => {
+          if(item.category.toLowerCase().includes(searchText.toLowerCase())){
+            return item;
+          }else if(item.title.toLowerCase().includes(searchText.toLowerCase())){
+            return item;
+          }
+        });
+
+        setData(filterData);
+      }
+    }
+  },[data.length, data, form_data, search, searchInput, searchText]);
   return (
-    <div>
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
     {
-      data.map(item => <Card key={item.id} item={item}></Card>)
+      getData?.map(item => <Card key={item.id} item={item}></Card>)
     }
     </div>
   )
