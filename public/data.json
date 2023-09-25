@@ -5,9 +5,10 @@
       "title": "Clean water for children",
       "category": "Health",
       "description": "'Clean Water for Children' is a life-changing mission dedicated to providing access to safe and pure drinking water for underprivileged youth. By eliminating waterborne diseases and promoting better health, we empower children to thrive, attend school, and dream of a brighter, disease-free future filled with possibilities and happiness.",
-      "card_bg_color": "#0052FF26",
-      "card_text_color": "#0052FF",
-      "card_category_bg_color": "#0052FF33"
+      "card_bg": "#0052FF26",
+      "text_color": "#0052FF",
+      "category_bg": "#0052FF33",
+      "button_bg": "#0052FF"
   },
   {
       "id": 2,
@@ -15,9 +16,10 @@
       "title": "Good Education",
       "category": "Education",
       "description": "'Good Education' is a transformative endeavor focused on providing quality learning opportunities for all. It's a pathway to empowering individuals, fostering critical thinking, and unlocking their full potential. Through accessible, inclusive, and innovative education, we aim to shape informed, skilled, and socially responsible citizens for a better world ahead.",
-      "card_bg_color": "#FF444A26",
-      "card_text_color": "#FF444A",
-      "card_category_bg_color": "#FF444A33"
+      "card_bg": "#FF444A26",
+      "text_color": "#FF444A",
+      "category_bg": "#FF444A33",
+      "button_bg": "#FF444A"
   },
   {
       "id": 3,
@@ -25,9 +27,10 @@
       "title": "Used Clothing Drive",
       "category": "Clothing",
       "description": "'Used Clothing Drive' is a community-driven effort to collect gently worn clothing and extend a helping hand to those in need. By donating pre-loved garments, we contribute to reducing waste and provide warmth and comfort to individuals facing economic challenges, promoting sustainability and compassion in our society.",
-      "card_bg_color": "#79C23F26",
-      "card_text_color": "#79C23F",
-      "card_category_bg_color": "#79C23F33"
+      "card_bg": "#79C23F26",
+      "text_color": "#79C23F",
+      "category_bg": "#79C23F33",
+      "button_bg": "#79C23F"
   },
   {
       "id": 4,
@@ -35,9 +38,10 @@
       "title": "Better Food for Everyone",
       "category": "Food",
       "description": "'Better Food for Everyone' is a mission dedicated to improving access to nutritious and sustainable food for all. By supporting local agriculture, reducing food waste, and advocating for healthy eating, we aim to enhance overall well-being, address food insecurity, and create a more equitable and eco-conscious food system for everyone to enjoy.",
-      "card_bg_color": "#F8714726",
-      "card_text_color": "#F87147",
-      "card_category_bg_color": "#F8714733"
+      "card_bg": "#F8714726",
+      "text_color": "#F87147",
+      "category_bg": "#F8714733",
+      "button_bg": "#F87147"
   },
   {
       "id": 5,
@@ -45,9 +49,10 @@
       "title": "Better Food for Everyone",
       "category": "Food",
       "description": "'Better Food for Everyone' is a mission dedicated to improving access to nutritious and sustainable food for all. By supporting local agriculture, reducing food waste, and advocating for healthy eating, we aim to enhance overall well-being, address food insecurity, and create a more equitable and eco-conscious food system for everyone to enjoy.",
-      "card_bg_color": "#F8714726",
-      "card_text_color": "#F87147",
-      "card_category_bg_color": "#F8714733"
+      "card_bg": "#F8714726",
+      "text_color": "#F87147",
+      "category_bg": "#F8714733",
+      "button_bg": "#F87147"
   },
   {
       "id": 6,
@@ -55,9 +60,10 @@
       "title": "Used Clothing Drive",
       "category": "Clothing",
       "description": "'Used Clothing Drive' is a community-driven effort to collect gently worn clothing and extend a helping hand to those in need. By donating pre-loved garments, we contribute to reducing waste and provide warmth and comfort to individuals facing economic challenges, promoting sustainability and compassion in our society.",
-      "card_bg_color": "#79C23F26",
-      "card_text_color": "#79C23F",
-      "card_category_bg_color": "#79C23F33"
+      "card_bg": "#79C23F26",
+      "text_color": "#79C23F",
+      "category_bg": "#79C23F33",
+      "button_bg": "#79C23F"
   },
   {
       "id": 7,
@@ -65,9 +71,10 @@
       "title": "Good Education",
       "category": "Education",
       "description": "'Good Education' is a transformative endeavor focused on providing quality learning opportunities for all. It's a pathway to empowering individuals, fostering critical thinking, and unlocking their full potential. Through accessible, inclusive, and innovative education, we aim to shape informed, skilled, and socially responsible citizens for a better world ahead.",
-      "card_bg_color": "#FF444A26",
-      "card_text_color": "#FF444A",
-      "card_category_bg_color": "#FF444A33"
+      "card_bg": "#FF444A26",
+      "text_color": "#FF444A",
+      "category_bg": "#FF444A33",
+      "button_bg": "#FF444A"
   },
   {
       "id": 8,
@@ -75,9 +82,10 @@
       "title": "Clean water for children",
       "category": "Health",
       "description": "'Clean Water for Children' is a life-changing mission dedicated to providing access to safe and pure drinking water for underprivileged youth. By eliminating waterborne diseases and promoting better health, we empower children to thrive, attend school, and dream of a brighter, disease-free future filled with possibilities and happiness.",
-      "card_bg_color": "#0052FF26",
-      "card_text_color": "#0052FF",
-      "card_category_bg_color": "#0052FF33"
+      "card_bg": "#0052FF26",
+      "text_color": "#0052FF",
+      "category_bg": "#0052FF33",
+      "button_bg": "#0052FF"
   },
   {
       "id": 9,
@@ -85,9 +93,10 @@
       "title": "Clean water for children",
       "category": "Health",
       "description": "'Clean Water for Children' is a life-changing mission dedicated to providing access to safe and pure drinking water for underprivileged youth. By eliminating waterborne diseases and promoting better health, we empower children to thrive, attend school, and dream of a brighter, disease-free future filled with possibilities and happiness.",
-      "card_bg_color": "#0052FF26",
-      "card_text_color": "#0052FF",
-      "card_category_bg_color": "#0052FF33"
+      "card_bg": "#0052FF26",
+      "text_color": "#0052FF",
+      "category_bg": "#0052FF33",
+      "button_bg": "#0052FF"
   },
   {
       "id": 10,
@@ -95,9 +104,10 @@
       "title": "Good Education",
       "category": "Education",
       "description": "'Good Education' is a transformative endeavor focused on providing quality learning opportunities for all. It's a pathway to empowering individuals, fostering critical thinking, and unlocking their full potential. Through accessible, inclusive, and innovative education, we aim to shape informed, skilled, and socially responsible citizens for a better world ahead.",
-      "card_bg_color": "#FF444A26",
-      "card_text_color": "#FF444A",
-      "card_category_bg_color": "#FF444A33"
+      "card_bg": "#FF444A26",
+      "text_color": "#FF444A",
+      "category_bg": "#FF444A33",
+      "button_bg": "#FF444A"
   },
   {
       "id": 11,
@@ -105,9 +115,10 @@
       "title": "Used Clothing Drive",
       "category": "Clothing",
       "description": "'Used Clothing Drive' is a community-driven effort to collect gently worn clothing and extend a helping hand to those in need. By donating pre-loved garments, we contribute to reducing waste and provide warmth and comfort to individuals facing economic challenges, promoting sustainability and compassion in our society.",
-      "card_bg_color": "#79C23F26",
-      "card_text_color": "#79C23F",
-      "card_category_bg_color": "#79C23F33"
+      "card_bg": "#79C23F26",
+      "text_color": "#79C23F",
+      "category_bg": "#79C23F33",
+      "button_bg": "#79C23F"
   },
   {
       "id": 12,
@@ -115,8 +126,9 @@
       "title": "Better Food for Everyone",
       "category": "Food",
       "description": "'Better Food for Everyone' is a mission dedicated to improving access to nutritious and sustainable food for all. By supporting local agriculture, reducing food waste, and advocating for healthy eating, we aim to enhance overall well-being, address food insecurity, and create a more equitable and eco-conscious food system for everyone to enjoy.",
-      "card_bg_color": "#F8714726",
-      "card_text_color": "#F87147",
-      "card_category_bg_color": "#F8714733"
+      "card_bg": "#F8714726",
+      "text_color": "#F87147",
+      "category_bg": "#F8714733",
+      "button_bg": "#F87147"
   }
 ]
