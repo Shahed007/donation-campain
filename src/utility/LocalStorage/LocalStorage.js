@@ -18,7 +18,18 @@ const saveLocalStorage = id => {
   const ifExist = getStorage.find(item => item == id);
 
   if(ifExist){
-    return toast.warn('This item already exist', {
+    return toast.warn('You already donated', {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+  }else{
+    toast.success("Your donation is complete. Thanks for donating", {
       position: "top-right",
       autoClose: 5000,
       hideProgressBar: false,
