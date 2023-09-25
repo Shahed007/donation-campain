@@ -1,52 +1,47 @@
 import { useOutletContext } from "react-router-dom"
 import Card from "../Card/Card";
 import { useEffect, useState } from "react";
+import PropTypes from 'prop-types';
 
 
-const Category = () => {
-  const [searchText, setSearchText] = useState('');
-  const [searchInput, setSearchInput] = useState('');
-  const [getData, setData] = useState([]);
-  const [notFound, setNotFound] = useState(false);
-  const form_data = document.getElementById('form-data');
-  const search = document.getElementById('search');
+const Category = ({getSearch,search}) => {
+  const [getData, setGetData] = useState([]);
+  const [notFound, setNotFound]= useState(false);
   const data = useOutletContext();
-  // console.log(data);
-  useEffect(()=>{
-    if(data.length > 0){
-      form_data.addEventListener('submit', (e) => {
-        e.preventDefault();
-        setSearchText(e.target.search.value);
+  
+
+  useEffect(()=> {
+
+   if(data.length > 0){
+    
+   if(!getSearch || !search){
+      setGetData(data);
+      setNotFound(false);
+    }else if(getSearch.toLowerCase() === 'all'){
+        setGetData(data);
+        setNotFound(false);
+    }else{
+      const filterData = data.filter(item => {
+        if(item.category.toLowerCase().includes(getSearch.toLowerCase())){
+          return item;
+        }else if(item.title.toLowerCase().includes(getSearch.toLowerCase())){
+          return item
+        }
       });
-
-      search.addEventListener('input', (e) => {
-        setSearchInput(e.target.value);
-      });
-
-      if(!searchInput){
-          setData(data);
-          setNotFound(false);
-
+      if(!filterData.length){
+        setNotFound(true);
       }else{
-        const filterData = data.filter(item => {
-          if(item.category.toLowerCase().includes(searchText.toLowerCase())){
-            return item;
-          }else if(item.title.toLowerCase().includes(searchText.toLowerCase())){
-            return item;
-          }
-        });
-
-         if(!filterData.length){
-          setNotFound(true)
-         }else{
-          setData(filterData);
-         }
-          
-        
+        setNotFound(false);
+        setGetData(filterData);
         
       }
     }
-  },[data.length, data, form_data, search, searchInput, searchText]);
+
+    
+   }
+  
+  }, [data,getSearch,search]);
+ 
   return (
     <>
       {
@@ -55,12 +50,18 @@ const Category = () => {
         :
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
         {
-           getData?.map(item => <Card key={item.id} item={item}></Card>)
+          getData?.map(item => <Card key={item.id} item={item}></Card>)
         }
        </div>
       }
     </>
   )
+}
+
+Category.propTypes = {
+  getSearch: PropTypes.string.isRequired,
+  // searchInput: PropTypes.string.isRequired,
+  search: PropTypes.string.isRequired,
 }
 
 export default Category
