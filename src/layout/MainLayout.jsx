@@ -4,8 +4,8 @@ import Navbar from "../components/Navbar/Navbar";
 
 const MainLayout = () => {
   return (
-    <div className="font-inter relative overflow-hidden h-screen">
-      <header className=" bg-transparent relative z-20 ">
+    <div className="font-inter relative overflow-hidden ">
+      <header className=" bg-transparent relative z-40 ">
         <Navbar></Navbar>
       </header>
       <main>
