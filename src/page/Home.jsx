@@ -5,16 +5,16 @@ import { useState } from "react";
 
 const Home = () => {
   const [getSearch, setGetSearch] = useState('');
-  const [search, setSearch]= useState('');
+
+ 
 
   const handleSubmit = e => {
     e.preventDefault();
     setGetSearch(e.target.search.value);
   }
 
-  const handleOnChange = e => {
-    setSearch(e.target.value);
-  }
+
+
   return (
     <>
     <section className="h-screen flex justify-center items-center relative">
@@ -24,11 +24,11 @@ const Home = () => {
       {/* <div className="absolute top-0 left-0 w-full  h-full bg-white/90 z-20"></div> */}
     
       <div className="relative z-30  h-full -top-20">
-      <HeroBanner handleSubmit={handleSubmit} handleOnChange={handleOnChange}></HeroBanner>
+      <HeroBanner handleSubmit={handleSubmit} ></HeroBanner>
       </div>
     </section>
     <section className="container mx-auto px-3 mt-8">
-      <Category getSearch={getSearch} search={search}></Category>
+      <Category getSearch={getSearch} ></Category>
     </section>
     </>
   )

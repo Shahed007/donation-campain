@@ -4,17 +4,18 @@ import { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 
 
-const Category = ({getSearch,search}) => {
+const Category = ({getSearch}) => {
   const [getData, setGetData] = useState([]);
   const [notFound, setNotFound]= useState(false);
   const data = useOutletContext();
   
 
-  useEffect(()=> {
 
+  useEffect(()=> {
    if(data.length > 0){
+
     
-   if(!getSearch || !search){
+   if(!getSearch){
       setGetData(data);
       setNotFound(false);
     }else if(getSearch.toLowerCase() === 'all'){
@@ -40,7 +41,7 @@ const Category = ({getSearch,search}) => {
     
    }
   
-  }, [data,getSearch,search]);
+  }, [data,getSearch]);
  
   return (
     <>
@@ -60,8 +61,7 @@ const Category = ({getSearch,search}) => {
 
 Category.propTypes = {
   getSearch: PropTypes.string.isRequired,
-  // searchInput: PropTypes.string.isRequired,
-  search: PropTypes.string.isRequired,
+
 }
 
 export default Category
