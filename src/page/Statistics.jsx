@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
-import { PieChart, Pie,  Cell, ResponsiveContainer,  } from 'recharts';
+import { PieChart, Pie,  Cell, ResponsiveContainer, Legend,  } from 'recharts';
 import { getLocalStorage } from '../utility/LocalStorage/LocalStorage';
 
 
@@ -86,6 +86,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
             ))}
             
           </Pie>
+          <Legend/>
         </PieChart>
       </ResponsiveContainer>
     </section>
