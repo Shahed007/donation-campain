@@ -19,7 +19,7 @@ const Donation = () => {
     },[data])
  
   return (
-    <section className="container mx-auto px-3 mt-20">
+    <section className="container mx-auto px-3 mt-20 h-screen">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {
         showAll ? 
