@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Card = ({item}) => {
   const {id,image,title,category,card_bg,text_color,category_bg} = item || {};
   return (
-    <Link to={`/donationDetails/${id}`} style={{backgroundColor: `${card_bg}`}} className='rounded-lg group overflow-hidden shadow-md border-2 border-gray-200'>
+    <Link state={title} to={`/donationDetails/${id}`} style={{backgroundColor: `${card_bg}`}} className='rounded-lg group overflow-hidden shadow-md border-2 border-gray-200'>
       <div >
       <img src={image} alt={`image of ${category}`}  className='mb-5 w-full object-cover group-hover:scale-105 duration-150' />
       <dir className="px-4 pb-3">

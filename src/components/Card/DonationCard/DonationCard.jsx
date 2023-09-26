@@ -12,7 +12,7 @@ const DonationCard = ({donate}) => {
         <h4><span className='text-sm py-1 px-[10px] rounded' style={{backgroundColor: `${category_bg}`, color: `${text_color}`}}>{category}</span></h4>
         <h2 className='text-2xl font-semibold text-[#0B0B0B] mt-3'>{title}</h2>
         <h3 className='mt-2 text-base font-semibold mb-7' style={{color: `${text_color}`}}>${price}</h3>
-        <Link to={`/donationDetails/${id}`}>
+        <Link to={`/donationDetails/${id}`} state={title}>
         <button className='px-6 py-3 text-lg font-semibold text-white rounded active:scale-95' style={{backgroundColor: `${button_bg}`}}>View Details</button>
         </Link>
       </div>

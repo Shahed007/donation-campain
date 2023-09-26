@@ -47,10 +47,7 @@ const Statistics = () => {
     }
   },[getFilterData])
 
-  useEffect(()=>{
-    const percentageChange = ((getTotal - getSaveTotal) / (getTotal)) * 100;
-   console.log(percentageChange); 
-  },[getSaveTotal,getTotal])
+
 
   const COLORS = ["#FF444A", "#00C49F"];
 
