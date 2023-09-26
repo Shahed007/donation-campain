@@ -23,7 +23,7 @@ const DonationDetails = () => {
  }
 
   return (
-    <section className="container mx-auto px-3 w-full mt-16">
+    <section className="container mx-auto px-3 w-full mt-16 mb-5">
       <div className="flex flex-col mb-9 h-[700px] relative">
         <img src={image} className="w-full  h-full rounded-lg object-cover" alt={`image of ${title}`} />
         <div className="bg-black/20 w-full absolute bottom-0 left-0 p-9 rounded-b-lg">
