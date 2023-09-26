@@ -1,8 +1,7 @@
-# React + Vite
+# 3 Features of my projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+* Implemented search function, user can search category wise. If the user's search text does not match, the search data note found page will show. Even if you click on the search button, the data will be displayed, if you click on the enter button, the data will also be displayed. If the user leaves the search box empty, all the data will be displayed.
 
-Currently, two official plugins are available:
+* Statistics page has been added where the user can see the percentage donation he has made to the total donation amount. Clicking on the category card will take you to the card and details page. From there, if the user clicks on the Donate button, the donation page will show the user's donation. Even if the donation page is reloaded, the data will not go because the data is saved in the local storage. If donation page total data is more than 4 show all button will show by default 4 will show card. Clicking on show button will show all the data. And show all button will be hide
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+* My project is made responsive for all devices like mobile, tablet and desktop
