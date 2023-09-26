@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
 
 
-const Category = ({getSearch}) => {
+const Category = ({getSearch, getChange}) => {
   const [getData, setGetData] = useState([]);
   const [notFound, setNotFound]= useState(false);
   const data = useOutletContext();
@@ -42,6 +42,15 @@ const Category = ({getSearch}) => {
    }
   
   }, [data,getSearch]);
+
+  useEffect(()=>{
+    if(data.length > 0){
+      if(getChange === ""){
+        setGetData(data);
+        setNotFound(false);
+      }
+    }
+  },[data,getChange])
  
   return (
     <>
@@ -61,6 +70,7 @@ const Category = ({getSearch}) => {
 
 Category.propTypes = {
   getSearch: PropTypes.string.isRequired,
+  getChange: PropTypes.string.isRequired,
 
 }
 

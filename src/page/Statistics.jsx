@@ -68,7 +68,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 };
 
   return (
-    <section className="container mx-auto px-3 flex justify-center items-center h-screen">
+    <section className="container mx-auto px-3 mb-5 flex justify-center items-center h-screen">
        <ResponsiveContainer width="100%" height="100%">
         <PieChart width={400} height={400}>
           <Pie
@@ -86,7 +86,7 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
             ))}
             
           </Pie>
-          <Legend/>
+          <Legend />
         </PieChart>
       </ResponsiveContainer>
     </section>
