@@ -13,15 +13,18 @@ const Donation = () => {
  
     useEffect(()=>{
       const getStorage = getLocalStorage();
-
+      console.log(getStorage);
       const filterData = data.filter(item => getStorage.includes(item.id));
       setDonateData(filterData);
     },[data])
  
   return (
-    <section className="container mx-auto px-3 mt-20 ">
+    <section className="container mx-auto px-3 mt-20 h-full">
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {
+        donateData.length == 0  ? 
+        <div className="flex justify-center items-center h-screen w-screen text-xl font-bold md:text-4xl">No donation item added</div>
+        :
         showAll ? 
         donateData?.map(donate => <DonationCard key={donate.id} donate={donate}></DonationCard>)
         :

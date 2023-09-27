@@ -21,7 +21,7 @@ const Navbar = () => {
           toggle ? <AiOutlineClose></AiOutlineClose> : <HiMenuAlt1></HiMenuAlt1>
         }
       </div>
-      <ul className={`md:hidden flex flex-col gap-6 justify-center items-center main-nav absolute  bg-white/90 rounded-b-sm top-24 duration-150 w-1/2 py-4  ${toggle ? 'right-0':'-right-full'}`}>
+      <ul className={`md:hidden flex flex-col gap-6 justify-center items-center main-nav absolute  bg-gray-300/80 rounded-b-sm top-24 duration-150 w-1/2 py-4  ${toggle ? 'right-0':'-right-full'}`}>
         {
           links.map((link,idx) => <li key={idx}><NavLink to={link.path} className="text-lg text-[#0B0B0B] duration-150 hover:text-[#FF444A] font-medium">{link.path_name}</NavLink></li>)
         }
