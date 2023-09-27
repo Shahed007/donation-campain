@@ -23,7 +23,7 @@ const Donation = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
       {
         donateData.length == 0  ? 
-        <div className="flex justify-center items-center h-screen w-screen text-xl font-bold md:text-4xl">No donation item added</div>
+        <div className="flex justify-center items-center h-screen w-screen text-xl text-center font-bold md:text-4xl">You are not donated please donate some money</div>
         :
         showAll ? 
         donateData?.map(donate => <DonationCard key={donate.id} donate={donate}></DonationCard>)
